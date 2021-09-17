@@ -22,8 +22,8 @@
           <li @click="navigate(index)" class="steps-item"
             v-bind:class="{active: index+1===status.active, done: index+1<status.active}"
             v-for="(content, index) of stepsContent">
-            <span>{{index+1}}</span> Step
-            {{index+1}}</li>
+            <span>{{index+1}}</span> {{stepsContent[index].title}}
+          </li>
 
         </ul>
         <div>
